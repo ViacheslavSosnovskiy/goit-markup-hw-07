@@ -18,7 +18,7 @@ div {
    @include centerdFlex(flex);
 }
 
-biutton {
+button {
    @include centeredFlex(inline-flex);
 }
 ======================================
