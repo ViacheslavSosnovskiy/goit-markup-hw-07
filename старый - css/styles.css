@@ -108,7 +108,7 @@ button {
     letter-spacing: 0.02em;
 } 
 
-.navigation-list a {
+.navigation__list a {
     position: relative;  /*для подчеркивания*/
     color:var(--primary-text-color);
 }
@@ -119,7 +119,7 @@ button {
 
 /*  флексы шапки  */
 
-.navigation-list {
+.navigation__list {
     display: flex;
     align-items: center;
     margin-left: 93px;
@@ -135,7 +135,7 @@ button {
     margin-right: 50px;
 }
 
-.navigation-list .item:not(:last-child){
+.navigation__list .item:not(:last-child){
     margin-right: 50px;
 }
 
@@ -154,7 +154,7 @@ button {
 }
 
 /* ==============  эффект текущей страницы ============ */
-.navigation-list .current {
+.navigation__list .current {
     color: var(--accent-color);
 }
 
