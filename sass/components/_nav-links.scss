@@ -10,7 +10,7 @@
     letter-spacing: 0.02em;
 } 
 
-.navigation__list a {
+.navigation-list a {
     position: relative;  /*для подчеркивания*/
     color:var(--primary-text-color);
 }
@@ -20,7 +20,7 @@
 }
 
 /*  флексы шапки  */
-.navigation__list {
+.navigation-list {
     display: flex;
     align-items: center;
     margin-left: 93px;
@@ -36,7 +36,7 @@
     margin-right: 50px;
 }
 
-.navigation__list .item:not(:last-child){
+.navigation-list .item:not(:last-child){
     margin-right: 50px;
 }
 
@@ -55,7 +55,7 @@
 }
 
 /* ==============  эффект текущей страницы ============ */
-.navigation__list .current {
+.navigation-list .current {
     color: var(--accent-color);
 }
 

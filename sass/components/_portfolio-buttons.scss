@@ -1,0 +1,28 @@
+.buttons-list {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 56px;
+}
+
+.section-buttons button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+
+    padding: 6px 22px;
+    border-radius: 4px;
+
+    transition: background-color var(--animation);
+}
+    
+.buttons-list .item:not(:last-child){
+    margin-right: 8px;
+}
+
+.buttons-list .button:hover,
+.buttons-list .button:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}

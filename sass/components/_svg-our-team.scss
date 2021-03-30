@@ -2,6 +2,11 @@
     fill: #AFB1B8;
     width: 20px;
     height: 20px;
+
+    .social-link:hover &,
+    .social-link:focus & {
+        fill: var(--primary-white-color);
+}
 }
 
 .icon-list {
@@ -18,20 +23,31 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
+
+    &:hover,
+    &:focus {
+        transition: background-color var(--animation);
+        background-color: var(--accent-color);
+    }
+
+    .item-icon:hover &,
+    .item-icon:focus & {
+        background-color:var(--accent-color);
+    }
 }
 
-.social-link:hover,
-.social-link:focus {
-    transition: background-color var(--animation);
-    background-color: var(--accent-color);
-}
+// .social-link:hover,
+// .social-link:focus {
+//     transition: background-color var(--animation);
+//     background-color: var(--accent-color);
+// }
 
-.social-link:hover .svg-icons,
-.social-link:focus .svg-icons {
-    fill: var(--primary-white-color);
-}
+// .social-link:hover .svg-icons,
+// .social-link:focus .svg-icons {
+//     fill: var(--primary-white-color);
+// }
 
-.item-icon:hover .social-link,
-.item-icon:focus .social-link{
-    background-color:var(--accent-color);
-}
+// .item-icon:hover .social-link,
+// .item-icon:focus .social-link{
+//     background-color:var(--accent-color);
+// }
