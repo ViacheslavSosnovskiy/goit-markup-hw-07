@@ -1,0 +1,37 @@
+.svg-icons {
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+    transition: background-color var(--animation);
+    background-color: var(--accent-color);
+}
+
+.social-link:hover .svg-icons,
+.social-link:focus .svg-icons {
+    fill: var(--primary-white-color);
+}
+
+.item-icon:hover .social-link,
+.item-icon:focus .social-link{
+    background-color:var(--accent-color);
+}

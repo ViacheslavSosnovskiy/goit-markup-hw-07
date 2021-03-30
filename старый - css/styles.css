@@ -174,7 +174,7 @@ button {
 }
 
 /* ============== ХЕДЕР  ============== */
-.header{
+/* .header{
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -186,10 +186,10 @@ button {
 .navigation {
     display: flex;
     align-items: center;
-}
+} */
 /* ============= ГЕРОЙ =============== */
 
-.section-hero {
+/* .section-hero {
     max-width: 1600px;
     background-color:#2F303A;
     padding-top: 200px;
@@ -207,7 +207,7 @@ button {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase
-}
+} */
 
 /* ============== ЗАГОЛОВКИ / цвет  ============== */
 
@@ -217,7 +217,7 @@ button {
 
 /* ==============  КНОПКИ   ============== */
 
-.button-hero {
+/* .button-hero {
     text-align: center;
     margin: 0 auto;
 
@@ -238,12 +238,12 @@ button {
 .button-hero:focus {
     transition: background-color var(--animation);
     background-color: var(--hover-background-color);
-}
+} */
 
 
 /* ============= ПРЕИМУЩЕСТВА =============== */
 
-.section-advantages .container {
+/* .section-advantages .container {
     padding-top: 94px;
 }
 
@@ -278,7 +278,7 @@ button {
     background: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
-}
+} */
 
 /* ============= ЗАНЯТИЕ =============== */
 
@@ -368,7 +368,7 @@ button {
 }
 
 /* ============= Наша команда  =============== */
-.section-team {
+/* .section-team {
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: #F5F4FA;
@@ -418,10 +418,10 @@ button {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-}
+} */
 
 /* ============== ПОСТОЯННЫЕ КЛИЕНТЫ ============== */
-.section-clients {
+/* .section-clients {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -457,13 +457,12 @@ button {
 .clients-link:focus {
     border-color: var(--accent-color);
     fill: var(--accent-color);
-    /* outline: none; */
 }
 
 .clients-list .item:not(:last-child) {
     margin-right: 30px;
-}
-
+} 
+*/
 /* ============== FOOTER ============== */
 
 .footer {
@@ -541,7 +540,7 @@ button {
 
 /*div - subscribe*/
 
-.footer-subscribe form {
+/* .footer-subscribe form {
     display: flex;
     margin-top: 20px;
 }
@@ -555,7 +554,7 @@ button {
     color: var(--primary-white-color);
 }
 
-/* input */
+
 .subscribe-input {
     margin-right: 12px;
     width: 358px;
@@ -577,7 +576,7 @@ button {
     border-color:var(--accent-color);
 }
 
-/* button */
+
 .footer-subscribe button {
     display: flex;
     align-items: center;
@@ -603,8 +602,8 @@ button {
 
 .subscribe-svg {
     margin-left: 10px;
-}
-
+} 
+*/
 
 /* страничка портфолио*/
 

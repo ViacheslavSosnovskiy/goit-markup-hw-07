@@ -1,0 +1,32 @@
+.footer-social {
+    margin-right: 93px;
+}
+
+.footer-social-list {
+    display: flex;
+    margin-top: 20px;  /* от присоединяйтесь*/
+}
+
+.footer-social-list .social-item:not(:last-child){
+   margin-right: 10px;
+}
+
+.join {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   color: var(--primary-white-color);
+}
+
+.social-link .white{
+   fill:var(--primary-white-color);
+}
+
+.footer-social-list .social-link {
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-list .social-link:hover,
+.footer-social-list .social-link:focus {
+   background-color: var(--accent-color);
+}
