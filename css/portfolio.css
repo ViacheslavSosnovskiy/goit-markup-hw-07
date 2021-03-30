@@ -310,6 +310,20 @@ button {
   transform: translateY(0%);
 }
 
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
