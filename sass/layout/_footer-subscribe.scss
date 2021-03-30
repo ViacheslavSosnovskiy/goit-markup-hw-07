@@ -23,15 +23,15 @@
     border-radius: 4px;
     color: var(--primary-white-color);
     padding: 15px 16px;
-}
 
-.subscribe-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-}
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
 
-.subscribe-input:hover,
-.subscribe-input:focus {
-    border-color:var(--accent-color);
+    &:hover,
+    &:focus {
+        border-color:var(--accent-color);
+    }
 }
 
 /* button */
@@ -49,14 +49,13 @@
     background-color: var(--accent-color);
     color: var(--primary-white-color);
     outline: none;
-}
 
-.subscribe-button:hover,
-.subscribe-button:focus {
-    transition: background-color var(--animation);
-    background-color: var(--hover-background-color);
+    &:hover,
+    &:focus {
+        transition: background-color var(--animation);
+        background-color: var(--hover-background-color);
+    }
 }
-
 
 .subscribe-svg {
     margin-left: 10px;

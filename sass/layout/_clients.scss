@@ -28,12 +28,12 @@
     border-radius: 4px;
     fill:#AFB1B8;
     transition: fill var(--animation), border-color var(--animation);
-}
 
-.clients-link:hover,
-.clients-link:focus {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        fill: var(--accent-color);
+    }
 }
 
 .clients-list .item:not(:last-child) {

@@ -42,6 +42,7 @@ p {
 ul, ol {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 img {
@@ -59,9 +60,13 @@ button {
   border: none;
 }
 
-/* убирает обводки */
 :active, :hover, :focus {
   outline: none;
+}
+
+/*заголовки*/
+.heading {
+  color: var(--primary-text-color);
 }
 
 .container {
@@ -105,8 +110,16 @@ button {
   color: var(--primary-text-color);
 }
 
+.navigation-list a:hover, .navigation-list a:focus {
+  color: var(--accent-color);
+}
+
 .contacts-list a {
   color: var(--title-text-color);
+}
+
+.contacts-list a:hover, .contacts-list a:focus {
+  color: var(--accent-color);
 }
 
 /*  флексы шапки  */
@@ -159,20 +172,6 @@ button {
   border-radius: 2px;
   background-color: var(--accent-color);
   transition: opacity var(--animation);
-}
-
-.list {
-  list-style: none;
-}
-
-.navigation-list a:hover,
-.navigation-list a:focus {
-  color: var(--accent-color);
-}
-
-.contacts-list a:hover,
-.contacts-list a:focus {
-  color: var(--accent-color);
 }
 
 .svg-icons {
@@ -285,6 +284,10 @@ button {
   transition: fill var(--animation);
 }
 
+.form-input:focus + .form-svg {
+  fill: var(--accent-color);
+}
+
 .wrapper-field {
   position: relative;
 }
@@ -300,17 +303,12 @@ button {
 }
 
 .form-input:focus {
-  outline: none;
   border-color: var(--accent-color);
 }
 
 .wrapper-field {
   display: block;
   margin-top: 4px;
-}
-
-.form-input:focus + .form-svg {
-  fill: var(--accent-color);
 }
 
 .info-lable {
@@ -333,16 +331,19 @@ button {
   margin-top: 4px;
 }
 
-.massage {
-  margin-bottom: 20px;
-}
-
 .form-message::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
 .form-message:focus {
-  outline: none;
+  border-color: var(--accent-color);
+}
+
+.massage {
+  margin-bottom: 20px;
+}
+
+.form-message:focus {
   border-color: var(--accent-color);
 }
 
@@ -404,8 +405,7 @@ button {
   color: var(--primary-white-color);
 }
 
-.button-form:hover,
-.button-form:focus {
+.form button:hover, .form button:focus {
   transition: color var(--animation), background-color var(--animation);
   background-color: var(--hover-background-color);
 }
@@ -457,8 +457,7 @@ button {
   color: var(--primary-white-color);
 }
 
-.button-hero:hover,
-.button-hero:focus {
+.button-hero:hover, .button-hero:focus {
   transition: background-color var(--animation);
   background-color: var(--hover-background-color);
 }
@@ -620,8 +619,7 @@ button {
   transition: fill var(--animation), border-color var(--animation);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients-link:hover, .clients-link:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -731,8 +729,7 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-input:hover,
-.subscribe-input:focus {
+.subscribe-input:hover, .subscribe-input:focus {
   border-color: var(--accent-color);
 }
 
@@ -752,8 +749,7 @@ button {
   outline: none;
 }
 
-.subscribe-button:hover,
-.subscribe-button:focus {
+.footer-subscribe button:hover, .footer-subscribe button:focus {
   transition: background-color var(--animation);
   background-color: var(--hover-background-color);
 }

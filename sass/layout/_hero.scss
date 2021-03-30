@@ -32,10 +32,10 @@
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 
-}
-
-.button-hero:hover,
-.button-hero:focus {
+    &:hover,
+    &:focus {
     transition: background-color var(--animation);
     background-color: var(--hover-background-color);
+    }
+
 }

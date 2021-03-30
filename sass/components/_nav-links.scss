@@ -13,10 +13,20 @@
 .navigation-list a {
     position: relative;  /*для подчеркивания*/
     color:var(--primary-text-color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .contacts-list a {
     color:var(--title-text-color);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
 }
 
 /*  флексы шапки  */
@@ -73,18 +83,4 @@
     background-color:var(--accent-color);
 
     transition: opacity var(--animation);
-}
-
-.list {
-    list-style: none;
-}
-
-.navigation-list a:hover,
-.navigation-list a:focus {
-    color: var(--accent-color);
-}
-
-.contacts-list a:hover,
-.contacts-list a:focus {
-    color: var(--accent-color);
 }

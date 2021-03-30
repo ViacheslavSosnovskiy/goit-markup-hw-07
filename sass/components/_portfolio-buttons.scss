@@ -15,14 +15,14 @@
     border-radius: 4px;
 
     transition: background-color var(--animation);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--primary-white-color);
+    }
 }
     
 .buttons-list .item:not(:last-child){
     margin-right: 8px;
-}
-
-.buttons-list .button:hover,
-.buttons-list .button:focus {
-    background-color: var(--accent-color);
-    color: var(--primary-white-color);
 }
