@@ -144,7 +144,7 @@ button {
 }
 
 /*  svg / contact */
-.contacts-list .icons-link {
+.icons-link {
   display: inline-flex;
   margin-right: 10px;
   fill: #757575;
@@ -156,11 +156,10 @@ button {
 }
 
 /* ==============  эффект текущей страницы ============ */
-.navigation-list .current {
+.current {
   color: var(--accent-color);
 }
 
-/*  нижнее подчеркивание */
 .current::after {
   content: '';
   position: absolute;
@@ -290,6 +289,8 @@ button {
 
 .wrapper-field {
   position: relative;
+  display: block;
+  margin-top: 4px;
 }
 
 .form-input {
@@ -304,11 +305,6 @@ button {
 
 .form-input:focus {
   border-color: var(--accent-color);
-}
-
-.wrapper-field {
-  display: block;
-  margin-top: 4px;
 }
 
 .info-lable {
@@ -341,10 +337,6 @@ button {
 
 .massage {
   margin-bottom: 20px;
-}
-
-.form-message:focus {
-  border-color: var(--accent-color);
 }
 
 /* условия */

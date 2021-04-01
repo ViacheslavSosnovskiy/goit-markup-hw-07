@@ -1,16 +1,16 @@
 .form {
     display: flex;
     flex-direction: column;
-}
 
-.form b {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-
-    color: var(--primary-text-color);
-    margin-bottom: 12px;
+    & b {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+    
+        color: var(--primary-text-color);
+        margin-bottom: 12px;
+    }
 }
 
 /* имя.тел.почта */
@@ -28,6 +28,8 @@
 
 .wrapper-field {
     position: relative;
+    display: block;
+    margin-top: 4px;
 }
 
 .form-input {
@@ -42,11 +44,6 @@
     &:focus {
         border-color: var(--accent-color);
     }
-}
-
-.wrapper-field {
-    display: block;
-    margin-top: 4px;
 }
 
 .info-lable {
@@ -82,10 +79,6 @@
     margin-bottom: 20px;
 }
 
-.form-message:focus {
-    border-color: var(--accent-color);
-}
-
 /* условия */
 
 .lable-checkbox {
@@ -106,26 +99,26 @@
     margin-bottom: 40px;
 
     display: flex;
-    align-items: center
-}
+    align-items: center;
 
-.lable-checkbox:before {
-    content: '';
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border: 2px solid var(--primary-text-color);
-    background-repeat: no-repeat;
-    cursor: pointer;
-    margin-right: 8px;
-}
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border: 2px solid var(--primary-text-color);
+        background-repeat: no-repeat;
+        cursor: pointer;
+        margin-right: 8px;
+    }
 
-.input-checkbox:checked + .lable-checkbox::before {
-    background-image: url("../images/svg/icon-check.svg");
-    background-size: contain;
-    border-color:var(--accent-color);
-    background-origin: border-box;
-    background-color: var(--accent-color);
+    .input-checkbox:checked + &::before {
+        background-image: url("../images/svg/icon-check.svg");
+        background-size: contain;
+        border-color:var(--accent-color);
+        background-origin: border-box;
+        background-color: var(--accent-color);
+    }
 }
 
 /*эффект фокуса*/
