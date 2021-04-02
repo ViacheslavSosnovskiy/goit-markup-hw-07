@@ -1,15 +1,17 @@
-.footer-subscribe form {
-    display: flex;
-    margin-top: 20px;
-}
+.footer-subscribe {
+    & form {
+        display: flex;
+        margin-top: 20px;
+    }
 
-.footer-subscribe b {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
+    & b {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: var(--primary-white-color);
+    }
 
-    color: var(--primary-white-color);
 }
 
 /* input */

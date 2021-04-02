@@ -22,11 +22,13 @@
    fill:var(--primary-white-color);
 }
 
-.footer-social-list .social-link {
-   background-color: rgba(255, 255, 255, 0.1);
-}
+.social-link {
+   .footer-social-list & {
+      background-color: rgba(255, 255, 255, 0.1);
+   }
 
-.footer-social-list .social-link:hover,
-.footer-social-list .social-link:focus {
-   background-color: var(--accent-color);
+   .footer-social-list &:hover,
+   .footer-social-list &:focus {
+      background-color: var(--accent-color);
+   }
 }
