@@ -104,54 +104,54 @@ button {
   letter-spacing: 0.02em;
 }
 
-.navigation-list a {
+.navigation__list .navigation__link {
   position: relative;
   /*для подчеркивания*/
   color: var(--primary-text-color);
 }
 
-.navigation-list a:hover, .navigation-list a:focus {
+.navigation__list .navigation__link:hover, .navigation__list .navigation__link:focus {
   color: var(--accent-color);
 }
 
-.contacts-list a {
+.contacts .contacts__link {
   color: var(--title-text-color);
 }
 
-.contacts-list a:hover, .contacts-list a:focus {
+.contacts .contacts__link:hover, .contacts .contacts__link:focus {
   color: var(--accent-color);
 }
 
 /*  флексы шапки  */
-.navigation-list {
+.navigation__list {
   display: flex;
   align-items: center;
   margin-left: 93px;
 }
 
-.contacts-list {
+.contacts {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.contacts-list .item:not(:last-child) {
+.contacts .contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.navigation-list .item:not(:last-child) {
+.navigation__list .navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 
 /*  svg / contact */
-.icons-link {
+.contacts__icons {
   display: inline-flex;
   margin-right: 10px;
   fill: #757575;
 }
 
-.contacts-list .info:hover .icons-link,
-.contacts-list .info:focus .icons-link {
+.contacts .contacts__link:hover .contacts__icons,
+.contacts .contacts__link:focus .contacts__icons {
   fill: var(--accent-color);
 }
 

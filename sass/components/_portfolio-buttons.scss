@@ -6,7 +6,7 @@
     padding-bottom: 56px;
 }
 
-.section-buttons button {
+.buttons-list__button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -23,6 +23,6 @@
     }
 }
     
-.buttons-list .item:not(:last-child){
+.buttons-list .buttons-list__item:not(:last-child){
     margin-right: 8px;
 }

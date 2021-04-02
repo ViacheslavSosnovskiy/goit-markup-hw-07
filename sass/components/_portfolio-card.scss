@@ -1,4 +1,4 @@
-.works-list {
+.card-list {
     display:flex;
     flex-wrap: wrap;
     margin-left: -30px;
@@ -25,10 +25,18 @@
     }
 }
 
-.works-list > .item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
+.card-list__item {
+    
+    .card-list > & {
+        flex-basis: calc(100% / 3 - 30px);
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .card-list &:hover,
+    .card-list &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);  
+    }
 }
 
 .card-works {
@@ -37,11 +45,6 @@
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
 } 
-
-.works-list .item:hover,
-.works-list .item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);  
-}
 
 .section-works .container {
     padding-bottom: 94px;
@@ -52,7 +55,7 @@
     overflow: hidden;
 }
 
-.works-list .overlay {
+.card-list .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -66,7 +69,7 @@
     transition: transform var(--animation);
 }
 
-.link-wrapper:hover .overlay,
-.link-wrapper:focus .overlay {
+.card-list__link:hover .overlay,
+.card-list__link:focus .overlay {
     transform: translateY(0%);
 } 
