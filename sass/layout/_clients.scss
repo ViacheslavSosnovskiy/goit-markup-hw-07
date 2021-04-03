@@ -16,7 +16,7 @@
     justify-content: space-between;
 }
 
-.clients-link {
+.clients-list__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +35,8 @@
     }
 }
 
-.clients-list .item:not(:last-child) {
-    margin-right: 30px;
+.clients-list__item {
+    .clients-list &:not(:last-child) {
+        margin-right: 30px;
+    }
 }

@@ -173,17 +173,6 @@ button {
   transition: opacity var(--animation);
 }
 
-.svg-icons {
-  fill: #AFB1B8;
-  width: 20px;
-  height: 20px;
-}
-
-.social-link:hover .svg-icons,
-.social-link:focus .svg-icons {
-  fill: var(--primary-white-color);
-}
-
 .icon-list {
   display: flex;
   justify-content: space-between;
@@ -191,23 +180,29 @@ button {
   padding-right: 32px;
 }
 
-.social-link {
+.icon-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-}
-
-.social-link:hover, .social-link:focus {
   transition: background-color var(--animation);
+}
+
+.icon-list__link:hover, .icon-list__link:focus {
   background-color: var(--accent-color);
 }
 
-.item-icon:hover .social-link,
-.item-icon:focus .social-link {
-  background-color: var(--accent-color);
+.svg-icons {
+  fill: #AFB1B8;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-list__link:hover .svg-icons,
+.icon-list__link:focus .svg-icons {
+  fill: var(--primary-white-color);
 }
 
 .backdrop {
@@ -458,11 +453,11 @@ button {
   padding-top: 94px;
 }
 
-.advantages {
+.advantages-list {
   display: flex;
 }
 
-.advantages h3 {
+.advantages-list h3 {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -470,19 +465,17 @@ button {
   text-transform: uppercase;
 }
 
-.advantages h3 {
-  margin-bottom: 10px;
-  font-weight: 700;
+.advantages-list p {
   font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
+  line-height: 1.71;
+  color: var(--title-text-color);
 }
 
-.advantages .item:not(:last-child) {
+.advantages-list .advantages-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.box {
+.advantages-list__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -493,12 +486,12 @@ button {
   margin-bottom: 30px;
 }
 
-.section-occupation .container {
+.section-about .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.section-occupation h2 {
+.section-about h2 {
   margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
@@ -506,20 +499,20 @@ button {
   line-height: 1.16;
 }
 
-.occupation-list {
+.about-list {
   display: flex;
 }
 
-.occupation-list .item:not(:last-child) {
+.about-list .about-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
 /*  встплывающее окно  */
-.occupation-wrapper {
+.about-list__wrapper {
   position: relative;
 }
 
-.occupation-text {
+.about-list__text {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -566,7 +559,7 @@ button {
   line-height: 1.18;
 }
 
-.team-list .item:not(:last-child) {
+.team-list .team-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -602,7 +595,7 @@ button {
   justify-content: space-between;
 }
 
-.clients-link {
+.clients-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -614,12 +607,12 @@ button {
   transition: fill var(--animation), border-color var(--animation);
 }
 
-.clients-link:hover, .clients-link:focus {
+.clients-list__link:hover, .clients-list__link:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.clients-list .item:not(:last-child) {
+.clients-list .clients-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -665,13 +658,13 @@ button {
   margin-right: 93px;
 }
 
-.footer-social-list {
+.social-list {
   display: flex;
   margin-top: 20px;
   /* от присоединяйтесь*/
 }
 
-.footer-social-list .social-item:not(:last-child) {
+.social-list .social-list__item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -682,16 +675,22 @@ button {
   color: var(--primary-white-color);
 }
 
-.social-link .white {
+.white {
   fill: var(--primary-white-color);
 }
 
-.footer-social-list .social-link {
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--animation);
 }
 
-.footer-social-list .social-link:hover,
-.footer-social-list .social-link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: var(--accent-color);
 }
 

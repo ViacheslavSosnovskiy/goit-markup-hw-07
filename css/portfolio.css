@@ -173,17 +173,6 @@ button {
   transition: opacity var(--animation);
 }
 
-.svg-icons {
-  fill: #AFB1B8;
-  width: 20px;
-  height: 20px;
-}
-
-.social-link:hover .svg-icons,
-.social-link:focus .svg-icons {
-  fill: var(--primary-white-color);
-}
-
 .icon-list {
   display: flex;
   justify-content: space-between;
@@ -191,23 +180,29 @@ button {
   padding-right: 32px;
 }
 
-.social-link {
+.icon-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-}
-
-.social-link:hover, .social-link:focus {
   transition: background-color var(--animation);
+}
+
+.icon-list__link:hover, .icon-list__link:focus {
   background-color: var(--accent-color);
 }
 
-.item-icon:hover .social-link,
-.item-icon:focus .social-link {
-  background-color: var(--accent-color);
+.svg-icons {
+  fill: #AFB1B8;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-list__link:hover .svg-icons,
+.icon-list__link:focus .svg-icons {
+  fill: var(--primary-white-color);
 }
 
 .buttons-list {
@@ -363,13 +358,13 @@ button {
   margin-right: 93px;
 }
 
-.footer-social-list {
+.social-list {
   display: flex;
   margin-top: 20px;
   /* от присоединяйтесь*/
 }
 
-.footer-social-list .social-item:not(:last-child) {
+.social-list .social-list__item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -380,16 +375,22 @@ button {
   color: var(--primary-white-color);
 }
 
-.social-link .white {
+.white {
   fill: var(--primary-white-color);
 }
 
-.footer-social-list .social-link {
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--animation);
 }
 
-.footer-social-list .social-link:hover,
-.footer-social-list .social-link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: var(--accent-color);
 }
 

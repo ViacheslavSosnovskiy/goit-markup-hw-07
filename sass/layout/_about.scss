@@ -1,9 +1,9 @@
-.section-occupation .container {
+.section-about .container {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.section-occupation h2 {
+.section-about h2 {
     margin-bottom: 50px;
     text-align: center;
 
@@ -12,21 +12,23 @@
     line-height: 1.16;
 }
 
-.occupation-list {
+.about-list {
     display: flex;
 }
 
-.occupation-list .item:not(:last-child){
-    margin-right: 30px;
+.about-list__item{
+    .about-list &:not(:last-child){
+        margin-right: 30px;
+    }
 }
 
 
 /*  встплывающее окно  */
-.occupation-wrapper {
+.about-list__wrapper {
     position: relative;
 }
 
-.occupation-text {
+.about-list__text {
     position: absolute;
     bottom:0;
     right:0;
@@ -41,5 +43,4 @@
     text-transform: uppercase;
     color: var(--primary-white-color);
     background-color: rgba(47, 48, 58, 0.8);
-
 }

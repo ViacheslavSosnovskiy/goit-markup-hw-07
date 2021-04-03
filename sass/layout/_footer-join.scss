@@ -2,13 +2,15 @@
     margin-right: 93px;
 }
 
-.footer-social-list {
+.social-list {
     display: flex;
     margin-top: 20px;  /* от присоединяйтесь*/
 }
 
-.footer-social-list .social-item:not(:last-child){
-   margin-right: 10px;
+.social-list__item{
+   .social-list &:not(:last-child){
+      margin-right: 10px;
+   }
 }
 
 .join {
@@ -18,17 +20,22 @@
    color: var(--primary-white-color);
 }
 
-.social-link .white{
+.white {
    fill:var(--primary-white-color);
 }
 
-.social-link {
-   .footer-social-list & {
-      background-color: rgba(255, 255, 255, 0.1);
-   }
+.social-list__link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   background-color: rgba(255, 255, 255, 0.1);
+   transition: background-color var(--animation);
 
-   .footer-social-list &:hover,
-   .footer-social-list &:focus {
+   &:hover,
+   &:focus {
       background-color: var(--accent-color);
    }
 }
